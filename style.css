@@ -1,7 +1,9 @@
 /* Global Styles */
 :root {
-    --primary-color: #f4c430; /* Gold */
-    --secondary-color: #fff3e2; /* Light Cream */
+    --primary-color: #f4c430;
+    /* Gold */
+    --secondary-color: #fff3e2;
+    /* Light Cream */
     --text-color: #333333;
     --light-text: #666666;
     --white: #ffffff;
@@ -447,7 +449,7 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
 
     .nav-menu.active {
@@ -471,4 +473,96 @@ footer {
         gap: 20px;
         text-align: center;
     }
+}
+
+/* Company Profile Section */
+.profile-section {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.company-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.detail-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    min-width: 250px;
+    transition: var(--transition);
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.detail-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.detail-card p {
+    font-weight: 700;
+    color: var(--light-text);
+    font-size: 1.1rem;
+}
+
+.testimonials h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card .stars {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: var(--light-text);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    color: var(--text-color);
+    font-weight: 700;
+    text-align: right;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
 }
